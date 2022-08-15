@@ -1,0 +1,44 @@
+body{
+    background-image: url("../Images/bookshelf.png")
+}
+
+img{
+    height:250px;
+    width:180px;
+    border: 1px solid rgb(17, 16, 16);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#area{
+    position: relative;
+}
+
+.bookButton{
+    position: absolute;
+    height:251px;
+    width:182px;
+    color: rgba(0,0,0,0);
+
+    transform: translate(-144%);
+
+    background: transparent;
+    border: none !important;
+    font-size:20px;
+    margin-right: 50px;
+    margin-left: 30px;
+    transition: background-color 0.15s linear;
+    transition: color 0.15s linear;
+    margin-bottom: 50px;
+}
+  
+#area .bookButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size:20px;
+    transition: background-color 0.15s linear;
+    transition: color 0.2s linear;
+    text-transform: capitalize;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(230, 230, 230);
+}

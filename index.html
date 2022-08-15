@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <input type="file" id="file-selector" multiple="true" accept=".epub" onchange="handleFiles(this)">
+    <button onclick = "window.location.href='Pages/reader.html'">Read a Book</button>
+    
+    <div id="area"></div>
+    <h3 style="float: left; clear: left">*Clicking on the covers breaks the program</h3>
+    <button id="remover" style ="visibility: hidden;" onclick = removeBook()>Back to Bookshelf</button>
+
+<center>
+    <!-- <select id="toc"></select> -->
+    <div id="viewer" class="spreads"></div>
+    <a id="prev" href="#prev" class="arrow">‹</a>
+    <a id="next" href="#next" class="arrow">›</a>
+  </center>
+
+  </body>
+  <script src="preload.js"></script>
+  <script src="./renderer.js"></script>
+</html>

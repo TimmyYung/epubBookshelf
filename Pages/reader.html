@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+    <link rel="stylesheet" href="../CSS/examples.css">
+    <title>Reader</title>
+</head>
+<body>
+  <button onclick = "window.location.href='../index.html'">Back to Bookshelf</button>
+  <input type="file" id="file-selector" multiple="false" accept=".epub" onchange="readBook(this)">
+
+  <select id="toc"></select>
+  <div id="viewer" class="spreads" style="margin-top:-100px;"></div>
+  <a id="prev" href="#prev" class="arrow">‹</a>
+  <a id="next" href="#next" class="arrow">›</a>
+</body>
+
+
+</script>
+<script src="../JS/renderBook.js"></script>
+<script src="../JS/reader.js"></script>
+<script src="../preload.js"></script>
+
+</html>
